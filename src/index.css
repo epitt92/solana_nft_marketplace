@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+span.MuiCircularProgress-root {
+  color: #fff;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  border: none !important;
+}
+.muidatagrid-root.MuiDataGrid-cell:hover {
+  border: none !important;
+  background-color: 'blue';
+}
+
+Paper {
+  background-color: #0a0b0d;
+  margin: 20;
+  margin-top: 0;
+  border: 1px solid #374151;
+  border-radius: 8;
+  color: white;
+}
+
+@layer components {
+  .wallet-adapter-button.moneyboys-wallet-button {
+    border: 1px solid white;
+    @apply flex items-center transition ease-in-out text-sm duration-300 h-10 border font-bold border-pink-400 rounded px-4 py-0 text-white shadow-lg text-shadow shadow-pink-400/20;
+  }
+  /* .wallet-adapter-button.cashmere-wallet-button:hover {
+    @apply bg-white shadow-md;
+  }
+  .wallet-adapter-button.cashmere-wallet-button:not([disabled]):hover {
+    @apply bg-white  shadow-md;
+  } */
+}

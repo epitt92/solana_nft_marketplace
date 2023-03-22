@@ -1,0 +1,7 @@
+{
+  "extends": ["prettier", "plugin:sonarjs/recommended"],
+  "plugins": ["sonarjs"],
+  "rules": {
+    "sonarjs/cognitive-complexity": "warn"
+  }
+}
